@@ -1,0 +1,68 @@
+/* Ensures table fields are all bordered the same*/
+* {
+  box-sizing: border-box;
+}
+/* Edit header color and sizing */
+.header {
+  background-color: grey;
+  padding: 30px 40px;
+  text-align: center;
+  color: white;
+}
+/* Make sures input box stays within header */
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*Styles input field*/
+input {
+  border: none;
+  border-radius: 0;
+  width: 75%;
+  padding: 10px;
+  font-size: 16px;
+  float: left;
+}
+
+/* Edit add me button */
+#clickMe {
+  padding: 10px;
+  width: 25%;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* List item styles */
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background: black;
+  color: white;
+  font-size: 25px;
+  transition: 0.3s;
+}
+ul li:nth-child(even) {
+  background: grey;
+}
+
+/*close button */
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+  cursor: pointer;
+}
+
+.close:hover {
+  background-color: #f44336;
+  color: white;
+}
